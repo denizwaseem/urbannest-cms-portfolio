@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover considered everyday essentials at UrbanNest. Explore home, lifestyle and workspace finds.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>UrbanNest — Thoughtful things for everyday living</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement" id="announcement">A little refresh for your space — explore the new season edit <span aria-hidden="true">↗</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="UrbanNest home"><span class="brand-mark">u.</span><span>urbannest</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#journal">Journal</a><a href="#contact">Contact</a></nav>
+    <button class="bag-button" id="bagButton" aria-label="View shopping bag">Bag <span id="bagCount">0</span></button>
+  </header>
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy"><p class="eyebrow" id="heroEyebrow">THE EVERYDAY EDIT · 2026</p><h1 id="heroTitle">Make room for<br><em>better living.</em></h1><p class="hero-text" id="heroText">Thoughtful pieces for slower mornings, clearer desks and more comfortable corners.</p><a class="button button-dark" href="#shop" id="heroCta">Explore the collection <span aria-hidden="true">↗</span></a><div class="hero-note"><span class="tiny-dot"></span> Considered design. Everyday prices.</div></div>
+      <div class="hero-art"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Calm, sunlit living room with neutral furniture and natural textures" fetchpriority="high"><div class="image-sticker"><span>DESIGNED<br>FOR LIVING</span><span class="sticker-star">✳</span></div></div>
+    </section>
+    <section class="trust-strip"><div><strong>01</strong><span>Thoughtfully chosen</span></div><div><strong>02</strong><span>Made for everyday</span></div><div><strong>03</strong><span>Less, but better</span></div></section>
+    <section class="section wrap" id="shop"><div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Good things, <em>well chosen.</em></h2></div><p class="section-intro">Useful objects, timeless shapes and little details that make a space feel like yours.</p></div>
+      <div class="filters" id="filters" aria-label="Filter products"><button class="filter active" data-category="All">All pieces <span>04</span></button><button class="filter" data-category="Living">Living</button><button class="filter" data-category="Workspace">Workspace</button><button class="filter" data-category="Everyday">Everyday</button></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    </section>
+    <section class="campaign wrap" id="campaign"><div class="campaign-image"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1100&q=80" alt="Warm neutral living space styled with natural materials" loading="lazy"></div><div class="campaign-copy"><p class="eyebrow">A SMALL CHANGE, A FRESH FEELING</p><h2 id="campaignTitle">Your space,<br><em>your next chapter.</em></h2><p id="campaignText">Start with one corner. Add something useful. Let the rest follow naturally.</p><a class="text-link" href="#shop">Find your starting point <span>↗</span></a></div></section>
+    <section class="story-section" id="story"><div class="wrap story-inner"><p class="eyebrow">A NOTE FROM US</p><h2>Less noise.<br><em>More meaning.</em></h2><p>UrbanNest is a fictional lifestyle store concept built around considered design, clear information and a calmer online shopping experience.</p><a class="text-link" href="#journal">Read our journal <span>↗</span></a></div></section>
+    <section class="section wrap journal-section" id="journal"><div class="section-heading"><div><p class="eyebrow">THE JOURNAL</p><h2>Notes for <em>everyday life.</em></h2></div><p class="section-intro">Small ideas for making your space work a little harder for you.</p></div><div class="journal-grid" id="journalGrid"></div></section>
+    <section class="newsletter"><div class="wrap newsletter-inner"><div><p class="eyebrow">A GOOD EMAIL, OCCASIONALLY</p><h2>A little inspiration<br>for your inbox.</h2></div><form id="newsletterForm"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe to newsletter">Join us ↗</button><p id="newsletterMessage" class="form-message" aria-live="polite">No noise. Just the good stuff.</p></form></div></section>
+  </main>
+  <footer class="site-footer" id="contact"><div class="wrap footer-main"><a class="brand" href="#home"><span class="brand-mark">u.</span><span>urbannest</span></a><p>Thoughtful things for everyday living.</p><div class="footer-links"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="mailto:hello@urbannest.example">Email us</a><a href="admin.html">Content studio ↗</a></div></div><div class="wrap footer-bottom"><span>© 2026 UrbanNest · Student portfolio project</span><span>Made with care and a little curiosity.</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body></html>
