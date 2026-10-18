@@ -1,82 +1,93 @@
 # UrbanNest — E-commerce Storefront & Content Studio
 
-A responsive portfolio project exploring website content management, e-commerce presentation, digital campaign updates, and web quality checks. Built as a learning project for a Web Developer Associate / Web Content Management role.
+UrbanNest is a small e-commerce website built with HTML, CSS, and JavaScript. It has a product catalogue, category filters, promotional content, journal posts, and a simple content editor.
 
-> **Important scope note:** This is a front-end prototype. The content studio stores data in the current browser using `localStorage`. It has no server, database, authentication, multi-user access, payment processing, or production publishing pipeline. It demonstrates content-editing concepts but is not a replacement for learning and using a real CMS such as WordPress.
+**Live Demo:** https://denizwaseem.github.io/urbannest-cms-portfolio/  
+**GitHub:** https://github.com/denizwaseem/urbannest-cms-portfolio
 
 ## Features
 
-- Responsive storefront with product cards, category filters, campaign content, journal posts, and a demo shopping bag.
-- Content Studio at `admin.html` to add, edit, and delete products; update homepage campaign copy; and add or delete journal posts.
-- Changes are stored in browser `localStorage` and appear on the storefront in the same browser.
-- Semantic HTML, form labels, alt text, keyboard-friendly controls, reduced-motion support, and responsive layouts.
-- Product and editorial content is fictional and intended for demonstration.
+- Browse products and filter them by category.
+- View promotional content and journal posts.
+- Use the demo shopping bag to add items.
+- Open `admin.html` to add, edit, or delete products and journal posts.
+- Update the homepage campaign text from the Content Studio.
+- Save changes in the browser using `localStorage`.
+- Responsive layout for different screen sizes.
 
-## Run locally
+## Built With
 
-No build tools or dependencies are required.
+- HTML5
+- CSS3
+- JavaScript
+- Browser `localStorage`
+- GitHub Pages
 
-1. Download or clone this repository.
-2. Open `index.html` in a modern browser. For best results, use a simple local server such as VS Code Live Server.
-3. Open `admin.html` in the **same browser** to use the Content Studio.
-4. Make a change in the Content Studio, save it, and refresh the storefront to see the update.
+## Run Locally
 
-A local server option with Python (if installed):
+You can run the project without installing any packages.
+
+1. Download or clone the repository.
+2. Open the project folder.
+3. Open `index.html` in your browser.
+4. Open `admin.html` in the same browser to use the Content Studio.
+
+For a local server, you can use VS Code Live Server or run this command if Python is installed:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000` and `http://localhost:8000/admin.html`.
+Then visit `http://localhost:8000` for the storefront or `http://localhost:8000/admin.html` for the Content Studio.
 
-## Project structure
+## Project Structure
 
 ```text
 urbannest-cms-portfolio/
-├── index.html    # Public storefront
-├── admin.html    # Browser-based content studio demo
-├── styles.css    # Responsive storefront and admin styles
-├── app.js        # Product rendering, filters, and demo content management
-├── README.md     # Project overview and setup
-└── .gitignore
+├── index.html
+├── admin.html
+├── styles.css
+├── app.js
+├── README.md
+├── .gitignore
+└── LICENSE
 ```
 
-## Suggested test checklist
+- `index.html` — storefront
+- `admin.html` — content editor
+- `styles.css` — styling for both pages
+- `app.js` — product display, filtering, and content editing
+- `README.md` — project documentation
 
-- [ ] Open the site on desktop and mobile widths.
-- [ ] Filter the product catalogue by category.
-- [ ] Add an item to the demo bag and confirm the count changes.
-- [ ] Open Content Studio and edit a product.
-- [ ] Add a product and confirm it appears on the storefront.
-- [ ] Update the campaign banner and verify the storefront copy.
-- [ ] Add and delete a journal post.
-- [ ] Refresh the pages and verify that saved content persists in the same browser.
-- [ ] Check image alt text, link destinations, form validation, and browser console errors.
-- [ ] Run a performance audit and record real results before claiming any performance improvement.
+## Testing
 
-## Skills demonstrated
+Things to check when running the project:
 
-HTML5, CSS3, responsive web design, JavaScript, DOM manipulation, form validation, localStorage, content organization, campaign content updates, basic accessibility, semantic markup, and manual quality assurance.
+- Product category filters work correctly.
+- Items can be added to the demo shopping bag.
+- Products can be added, edited, and deleted in the Content Studio.
+- Campaign text and journal posts can be updated.
+- Changes remain after refreshing the pages in the same browser.
+- The layout works on mobile and desktop screens.
+- Links, images, and forms work as expected.
 
-## Known limitations and next steps
+## Limitations
 
-1. Replace browser-only storage with a real CMS such as WordPress or a backend/API before describing it as a production content management system.
-2. Add server-side authentication and role-based access control before exposing any admin interface publicly.
-3. Add automated tests, robust content validation, and a deployment workflow.
-4. If using external images, confirm licensing and retain appropriate attribution where required.
-5. Add WooCommerce only if building the WordPress version; this prototype does not process orders or payments.
+This is a front-end demo, not a production e-commerce site or a full CMS.
 
+- Content is saved in the current browser using `localStorage`.
+- Changes are not shared between different browsers or devices.
+- There is no backend, database, or user authentication.
+- The shopping bag does not process real orders or payments.
+- The Content Studio is for demonstration purposes and is not secure for managing real customer or business data.
 
+## Future Improvements
 
-**UrbanNest — E-commerce Storefront & Content Studio | HTML, CSS, JavaScript**
-
-- Built a responsive storefront with product category filters, campaign content, and editorial cards.
-- Developed a browser-based content studio to create, edit, and remove product and journal entries and update campaign copy.
-- Used JavaScript and localStorage to persist demo content and validate forms; tested content updates and responsive behavior across screen sizes.
-- Documented CMS limitations and identified next steps for integration with a production CMS.
-
-Do not claim WordPress, WooCommerce, production authentication, real checkout, or measured performance improvements unless you implement and test those features yourself.
+- Build a WordPress version to practise using a real CMS.
+- Add WooCommerce for product and store management.
+- Improve error handling and add automated tests.
+- Test accessibility and measure website performance.
 
 ## License
 
-This project is provided for educational and portfolio use. Review licenses for all third-party images and fonts before public or commercial use.
+See the `LICENSE` file for the terms that apply to this project. Check the licenses of any third-party images or fonts used.
