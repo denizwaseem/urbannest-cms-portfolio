@@ -66,7 +66,7 @@ HTML5, CSS3, responsive web design, JavaScript, DOM manipulation, form validatio
 4. If using external images, confirm licensing and retain appropriate attribution where required.
 5. Add WooCommerce only if building the WordPress version; this prototype does not process orders or payments.
 
-## Resume wording (use after you have tested the project)
+
 
 **UrbanNest — E-commerce Storefront & Content Studio | HTML, CSS, JavaScript**
 
